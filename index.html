@@ -118,3 +118,178 @@
                 </section>
             </article>
         </section>
+
+        <section id="pases" class="seccionPases">
+            <h2>PASES</h2>
+            <section class="cuadriculaPases">
+                <article class="paseTemporada" data-tipo="pase-basico" data-precio="12" data-nombre="Pase Básico">
+                    <h3>PASE DE TEMPORADA</h3>
+                    <section class="imagenes-pase">
+                        <img src="imagenes/pase1.jpg" alt="Pase de Temporada 1">
+                        <img src="imagenes/pase2.jpg" alt="Pase de Temporada 2">
+                    </section>
+                    <section class="tooltip">
+                        <p>Evento por tiempo limitado con misiones y recompensas exclusivas (skins, orbes, iconos). Juega, sube niveles y farmea puntos para desbloquear todo.</p>
+                        <p><strong>Básico:</strong> $12 | <strong>Deluxe:</strong> $18 | <strong>Premium:</strong> $24</p>
+                        <section class="cantidad-controls">
+                            <button class="btn-cantidad" onclick="cambiarCantidad('pase-basico', -1)">-</button>
+                            <span class="cantidad-display" id="cantidad-pase-basico">0</span>
+                            <button class="btn-cantidad" onclick="cambiarCantidad('pase-basico', 1)">+</button>
+                        </section>
+                    </section>
+                </article>
+                <article class="ofertaSemanal" data-tipo="oferta-semanal" data-precio="0" data-nombre="Oferta Semanal">
+                    <h3>OFERTA SEMANAL</h3>
+                    <section class="imagenes-pase">
+                        <img src="imagenes/descuento semanal.jpg" alt="Ofertas Semanales">
+                    </section>
+                    <section class="tooltip">
+                        <p>Cada semana, campeones y skins con descuentazo personalizado para tu cuenta. Vale la pena revisar, nunca sabes qué joya aparece.</p>
+                        <p class="precio">Precio variable</p>
+                        <p><em>Contacta para conocer ofertas disponibles</em></p>
+                    </section>
+                </article>
+            </section>
+        </section>
+
+        <section id="personalizacion" class="seccionPersonalizacion">
+            <h2>PERSONALIZACIÓN</h2>
+            
+            <section class="cuadriculaPersonalizacion">
+                <article class="categoriaPersonalizacion" data-tipo="iconos" data-precio="1.55" data-nombre="Icono">
+                    <h3>ICONOS</h3>
+                    <img src="imagenes/iconos.jpg" alt="Iconos">
+                    <section class="tooltip">
+                        <p>Iconos únicos para personalizar tu perfil y mostrar tu estilo en el juego.</p>
+                        <p class="precio">$1.55</p>
+                        <section class="cantidad-controls">
+                            <button class="btn-cantidad" onclick="cambiarCantidad('iconos', -1)">-</button>
+                            <span class="cantidad-display" id="cantidad-iconos">0</span>
+                            <button class="btn-cantidad" onclick="cambiarCantidad('iconos', 1)">+</button>
+                        </section>
+                    </section>
+                </article>
+                <article class="categoriaPersonalizacion" data-tipo="chromas" data-precio="1.85" data-nombre="Chroma">
+                    <h3>CHROMAS</h3>
+                    <img src="imagenes/chromas.jpg" alt="Chromas">
+                    <section class="tooltip">
+                        <p>Variaciones de color para tus skins favoritas. Mismo estilo, pero con el drip que más te guste.</p>
+                        <p class="precio">$1.85</p>
+                        <section class="cantidad-controls">
+                            <button class="btn-cantidad" onclick="cambiarCantidad('chromas', -1)">-</button>
+                            <span class="cantidad-display" id="cantidad-chromas">0</span>
+                            <button class="btn-cantidad" onclick="cambiarCantidad('chromas', 1)">+</button>
+                        </section>
+                    </section>
+                </article>
+                <article class="categoriaPersonalizacion" data-tipo="emotes" data-precio="0" data-nombre="Emotes">
+                    <h3>EMOTES</h3>
+                    <img src="imagenes/emotes.jpg" alt="Emotes">
+                    <section class="tooltip">
+                        <p>Iconos animados para presumir, trolear o saludar en partida.</p>
+                        <p class="precio">Precio variable</p>
+                        <p><em>Contacta para más información</em></p>
+                    </section>
+                </article>
+                <article class="categoriaPersonalizacion" data-tipo="otros" data-precio="0" data-nombre="Otros">
+                    <h3>OTROS</h3>
+                    <img src="imagenes/otros.jpg" alt="Otros elementos">
+                    <section class="tooltip">
+                        <p>• Centinelas<br>• Página de Runas<br>• Orbes ($1.75 - $67)<br>• Cofre Hextech ($1.25 - $11)<br>• Llaves ($0.80)<br>• 
+                        ¡Y mucho más!</p>
+                        <p><em>Precios variables según producto</em></p>
+                    </section>
+                </article>
+            </section>
+            
+            <aside class="promocionesUsuario">
+                <h3>PROMOCIONES DE USUARIO</h3>
+                <p>En L.U.X, ofrecemos descuentos a partir de compras de más de 40 dólares, además de regalos mensuales</p>
+                <details class="detallesPromocion">
+                    <summary>Ver detalles de promociones</summary>
+                    <p>Las promociones solo se aplican para usuarios que tengan más de 5 compras en la página con anterioridad con precio 
+                    superior a 50 dólares, se harán sorteos a través del grupo para los usuarios.</p>
+                </details>
+            </aside>
+        </section>
+
+        <section id="atencionCliente" class="atencionCliente">
+            <h2>ATENCIÓN AL CLIENTE</h2>
+            <section class="cuadriculaServicio">
+                <article class="itemServicio">
+                    <h3>¿Cómo Funciona?</h3>
+                    <p>En nuestra página, cada compra se realiza a través de los siguientes pasos:</p>
+                    <p>Una vez que el usuario ha elegido los productos y se pone en contacto con nosotros, pasamos a pedirle el usuario, 
+                    debido al cambio de política, luego de pasar 7 días, el usuario puede pagar el monto de costo, si así se siente más seguro.
+                    Se le envía todo lo correspondiente sin esperar más de 7 días.</p>
+                </article>
+                
+                <article class="itemServicio">
+                    <h3>¿Por qué en dólares?</h3>
+                    <p>Debido a que trabajamos para la mayoría de países latinos que tienen problemas con sus monedas y cambios en esta,
+                         se realiza la conversión de su dinero a la moneda de elección (soles, pesos, bolívares, etc.)</p>
+                </article>
+            </section>
+        </section>
+
+        <section id="contacto" class="seccionContacto">
+            <h2>CONTACTO</h2>
+            <p style="color: var(--text-light); font-size: 1.2rem; margin-bottom: 2rem;">
+                ¿Listo para conseguir tus skins favoritas? ¡Contáctanos directamente por WhatsApp!
+            </p>
+            <a href="https://wa.link/cqb35s" target="_blank" class="botonWhatsApp">
+                💬 Contactar por WhatsApp
+            </a>
+            <p style="color: var(--primary-color); font-size: 1rem; margin-top: 1rem;">
+                Respuesta rápida • Atención personalizada • Precios justos
+            </p>
+        </section>
+
+        <section id="referencias" class="seccionReferencias">
+            <h2>REFERENCIA Y ACREDITACIÓN</h2>
+            <article class="contenidoReferencias">
+                <p style="color: var(--text-light); text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">
+                    Aquí se colocan las capturas de las compras realizadas.
+                </p>
+                <section class="testimoniosGrid">
+                    <img src="imagenes/ref1.png" alt="Referencia de compra 1"> 
+                    <img src="imagenes/ref2.png" alt="Referencia de compra 2">
+                    <img src="imagenes/ref3.png" alt="Referencia de compra 3">
+                    <img src="imagenes/ref4.png" alt="Referencia de compra 4">
+                    <img src="imagenes/ref5.png" alt="Referencia de compra 5">
+                </section>
+            </article>
+        </section>
+    </main>
+
+    <aside id="boletaVirtual" class="boletaVirtual">
+        <h3>Boleta Virtual</h3>
+        <section class="contenidoBoleta">
+            <ul class="itemsSeleccionados" id="itemsSeleccionados">
+                <!-- Items van aquí -->
+            </ul>
+            <footer class="totalBoleta">
+                <p>Total: $<span id="montoTotal">0.00</span></p>
+                <a href="https://wa.link/cqb35s" target="_blank" class="botonContacto" id="botonContactoBoleta">
+                    Contactar para Compra
+                </a>
+            </footer>
+        </section>
+    </aside>
+
+    <footer>
+        <nav class="footerLinks">
+            <a href="#promociones">Promociones</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <section class="footerInfo">
+            <p>©Copyright 2025 L.U.X Todos los derechos reservados</p>
+            <nav class="footerPolicies">
+                <a href="#terminos">Términos y Condiciones</a> |
+                <a href="#privacidad">Políticas de Privacidad</a> |
+                <a href="#cookies">Políticas de Cookies</a>
+            </nav>
+        </section>
+    </footer>
+</body>
+</html>
