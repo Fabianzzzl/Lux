@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L.U.X - Tu Tienda de Confianza League of Legends</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="logo-container">
+                <img src="imagenes/logolux.png" alt="Logo L.U.X">
+                <h1 class="logo">L.U.X</h1>
+            </section>
+            
+            <!-- Checkbox para el menú -->
+            <input type="checkbox" id="menu-toggle">
+            
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <ul class="menuNavegacion">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#cosmeticos">Cosméticos</a></li>
+                <li><a href="#pases">Pases</a></li>
+                <li><a href="#personalizacion">Personalización</a></li>
+                <li><a href="#atencionCliente">Ayuda</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="seccionHero">
+            <article class="hero-images">
+                <img src="imagenes/luxlogo.png" alt="mini">
+                <img src="imagenes/Fondo y Logo.jpg" alt="FondoLogo">
+                <img src="imagenes/porologo.png" alt="poro">
+            </article>
+            
+            <article class="contenidoBienvenida">
+                <h2>¡Hola invocador!</h2>
+                <p>Te damos la bienvenida a la que será tu nueva tienda de confianza.</p>
+                <p>¿A veces sientes que compras más RP de lo que vas a gastar? ¿Sientes que los precios salen de rango?</p>
+                <p>Pues te tenemos la solución, aquí encontrarás Skins, Chromas, Pase de Batalla y mucho más, al precio justo.</p>
+                <aside class="notaPrecio">
+                    <p><strong>Nota:</strong> Recuerda que los precios están en dólares debido al cambio de moneda, más información en Ayuda</p>
+                </aside>
+            </article>
+            
+            <aside class="bannerPromocional">
+                <p>OFERTA SEMANAL - Descuentos especiales</p>
+            </aside>
+        </section>
+
+        <section id="cosmeticos" class="seccionCosmeticos">
+            <h2>COSMÉTICOS</h2>
+            <article class="categoriaCosmetica">
+                <h3>ASPECTOS</h3>
+                <section class="tiposAspecto">
+                    <article class="elementoAspecto" data-tipo="reales" data-precio="6.8" data-nombre="Skin Reales">
+                        <h4>REALES</h4>
+                        <img src="imagenes/Skin reales.jpg" alt="Aspectos Reales">
+                        <section class="tooltip">
+                            <p>Skins más básicas, con cambios de modelo y color, perfectas para darle estilo sin romper el bolsillo.</p>
+                            <p class="precio">$6.80</p>
+                            <section class="cantidad-controls">
+                                <button class="btn-cantidad" onclick="cambiarCantidad('reales', -1)">-</button>
+                                <span class="cantidad-display" id="cantidad-reales">0</span>
+                                <button class="btn-cantidad" onclick="cambiarCantidad('reales', 1)">+</button>
+                            </section>
+                        </section>
+                    </article>
+                    <article class="elementoAspecto" data-tipo="epica" data-precio="9.5" data-nombre="Skin Épica">
+                        <h4>ÉPICA</h4>
+                        <img src="imagenes/skins epicas.gif" alt="Aspectos Épicos">
+                        <section class="tooltip">
+                            <p>Remodelado visual y efectos nuevos para habilidades. Se ven y se sienten frescos, sin tocar la voz.</p>
+                            <p class="precio">$9.50</p>
+                            <section class="cantidad-controls">
+                                <button class="btn-cantidad" onclick="cambiarCantidad('epica', -1)">-</button>
+                                <span class="cantidad-display" id="cantidad-epica">0</span>
+                                <button class="btn-cantidad" onclick="cambiarCantidad('epica', 1)">+</button>
+                            </section>
+                        </section>
+                    </article>
+                    <article class="elementoAspecto" data-tipo="legendaria" data-precio="12.5" data-nombre="Skin Legendaria">
+                        <h4>LEGENDARIA</h4>
+                        <img src="imagenes/skins legendarias.gif" alt="Aspectos Legendarios">
+                        <section class="tooltip">
+                            <p>Skins con rediseño total de animaciones y voz. No cambian de forma como los definitivos, pero igual se sienten como estrenar campeón nuevo.</p>
+                            <p class="precio">$12.50</p>
+                            <section class="cantidad-controls">
+                                <button class="btn-cantidad" onclick="cambiarCantidad('legendaria', -1)">-</button>
+                                <span class="cantidad-display" id="cantidad-legendaria">0</span>
+                                <button class="btn-cantidad" onclick="cambiarCantidad('legendaria', 1)">+</button>
+                            </section>
+                        </section>
+                    </article>
+                    <article class="elementoAspecto" data-tipo="definitiva" data-precio="23.5" data-nombre="Skin Definitiva">
+                        <h4>DEFINITIVA</h4>
+                        <img src="imagenes/skins Definitivas.gif" alt="Aspectos Definitivos">
+                        <section class="tooltip">
+                            <p>La joya de la corona. Modelo, animaciones, voz, efectos y hasta música nuevos. Cambian durante la partida y son puro flex en la Grieta.</p>
+                            <p class="precio">$23.50</p>
+                            <section class="cantidad-controls">
+                                <button class="btn-cantidad" onclick="cambiarCantidad('definitiva', -1)">-</button>
+                                <span class="cantidad-display" id="cantidad-definitiva">0</span>
+                                <button class="btn-cantidad" onclick="cambiarCantidad('definitiva', 1)">+</button>
+                            </section>
+                        </section>
+                    </article>
+                </section>
+            </article>
+        </section>
